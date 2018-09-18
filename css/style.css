@@ -317,10 +317,13 @@ li a:hover {
 .card-title {
     border-bottom: 2px solid;
     padding: 7px;
+    text-align: center;
+    font-weight: 700;
 }
 
 .card-image {
     margin-top: 10px;
+    margin-left: 50% auto;
 }
 
 .card-description {
