@@ -1,6 +1,16 @@
-let wrapperMenuIsOpen = false;
+var wrapperMenuIsOpen = false;
 
 function inicializeApp() {
+    const page = document.getElementById('page');
+    const loader = document.getElementById('loader');
+
+    document.onreadystatechange = (e) => {
+        setTimeout(() => {
+            page.style.display = 'inline';
+            loader.style.display = 'none';
+        }, 1000);
+    }
+
     changePage();
 }
 
