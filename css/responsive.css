@@ -1,0 +1,52 @@
+::root {
+
+}
+
+/* 768 992 1200  */
+
+
+@media screen and (max-width: 768px) {
+    .hamburger-button {
+        display: inline;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .page-title {
+        font-size: 14px;
+    }
+
+    .page-subtitle {
+        font-size: 16px;
+    }
+
+    .page-content {
+        font-size: 14px;
+    }
+
+    .sidebar-bottom-content {
+        font-size: 12px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .wrapper-nav {
+        float: left;
+    }
+
+    .sidebar {
+        display: none;
+        border-right:   none;
+    }
+
+    .content {
+        margin: 40px;
+    }
+}

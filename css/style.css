@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+::root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Inconsolata';
+    font-size: 18px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.inline {
+    display: flex;
+}
+
+.inline-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.sidebar {
+    text-align: right;
+    padding-right: 20px;
+    width: 200px;
+    border-right: 3px #333 solid;
+    min-height: 85vh;
+}
+
+.hamburger-button {
+    display: none;
+    transform: rotate(90deg);
+}
+
+.wrapper-nav {
+    display: none;
+    /* position: fixed;
+    background-color: white;
+    width: 100%;
+    margin: 50px;
+    font-size: 30px; */
+}
+
+.sidebar-bottom-content {
+    font-size: 15px;
+    color: grey;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.sidebar-bottom-content a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.logo {
+    margin: 50px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 130px;
+}
+
+ul li {
+    list-style-type: none;
+    margin-top: 7px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+li a:hover {
+    opacity: 1;
+    border-bottom: 2px solid black;
+}
+
+.content {
+    margin: 70px;
+}
+
+.page-title {
+    opacity: 0.6;
+    font-size: 20px
+}
+
+.page-subtitle {
+    font-size: 22px
+}
+
+.page-content {
+    font-size: 16px;
+    margin: 30px;
+}
+
+
+.textfield {
+    border: 0px #FAFAFA solid;
+    box-shadow: 0px 3px #F1F1F1;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+}
+
+.textfield:focus {
+    box-shadow: 0px 3px black;
+}
+
+.main-button {
+    margin: 20px;
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: 2px solid #000;
+    width: 130px;
+    z-index: 1;
+}
+
+.main-button:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #000;
+    transition: all 0.3s ease;
+  }
+  
+  .main-button:hover {
+    color: #fff;
+  }
+  .main-button:hover:after {
+    top: 0;
+    height: 100%;
+  }
+  .main-button:active {
+    top: 2px;
+  }
+  
+
+.textarea {
+    border: 0px #FAFAFA solid;
+    box-shadow: 0px 3px #F1F1F1;
+    width: 200px;
+    margin: 10px;
+}
+
+.textarea:focus {
+    box-shadow: 0px 3px black;
+}
+
+
+.main-button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Card  */
+.card {
+    border: 2px black solid;
+    min-width: 300px;
+    margin: 20px;
+}
+
+.card:hover {
+    border: 2px black solid;
+    opacity: 0.8;
+}
+
+.card-title {
+    border-bottom: 2px solid;
+    padding: 7px;
+}
+
+.card-image {
+    margin-top: 10px;
+}
+
+.card-description {
+    border-top: 2px solid;
+    margin: 20px 10px 10px 10px;
+    padding: 10px;
+}
+
+.font-awesome-icon {
+    font-size: 30px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.font-awesome-icon:hover {
+    opacity: 0.8;
+}
