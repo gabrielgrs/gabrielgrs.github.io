@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/blood.css">
+	<link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -21,33 +22,58 @@
 			</section>
 
 			<section>
-				<ul>
-					<li> Introdução </li>
-					<li> Características </li>
-					<li> Exemplo </li>
-				</ul>
+				<p> O JavaScript foi criado por Brendan Eich na Netscape (um dos precursores dos navegadores web), inicialmente
+					sendo chamado de LiveScript, mas logo seu nome foi mudado para JavaScript. </p>
+				<p> No entanto, por conta do Java, seu nome teve que ser mudado, sendo oficialmente chamado de ECMAScript</p>
 			</section>
 
 			<section>
-				<p> Originalmente criado para atuar em navegador </p>
-			</section>
-
-			<section>
-				<a href='https://www.dwitter.net/'>Dwitter</a>
-			</section>
-
-			<section>
-				<p> Não são apenas Scripts! </p>
-				<p> EcmaScript </p>
-				<p> Prototypes </p>
-				<p> Engine V8 ( Surgiu do gmail ) </p>
-				<p> Cliente e Servidor </p>
-
+				<p> ECMA é a empresa que criou e atualmente mantem a linguagem</p>
 			</section>
 
 			<section>
 				<p> JavaScript não é Java, mas ... </p>
 				<img height="300px" src='./images/java_script.png' />
+				<p> O nome surgiu por causa do Java e atualmente ambas tem muito em comum </p>
+			</section>
+
+			<section>
+				<p> As páginas são formadas pelo <b>DOM</b> (Document Object Model) </p>
+				<img src='./images/dom.png' />
+				<p> DOM é a composição de <i>NODOs</i> que formam as páginas</p>
+			</section>
+
+			<section>
+				<p> Shadow DOM </p>
+				<img src='./images/shadow-dom.png' />
+				<p> Com a chegada do HTML5, surgiram os Web Components </p>
+			</section>
+
+			<section id='manipulatedDom'>
+				<p style='text-shadow: 0 0 2px #000000;'> Manipulando o DOM </p>
+				<div style='font-size: 20px;'>#<input onkeyup="changeBackground()" id='domManipulator' /></div>
+
+				<script>
+					function changeBackground() {
+						const manipulator = document.getElementById('domManipulator').value;
+						document.getElementById('manipulatedDom').style.backgroundColor = `#${manipulator}`;
+					}
+				</script>
+			</section>
+
+			<section>
+				<p> Muitas coisas legais podem ser feitas com JavaScript em menos de 140 caracteres</p>
+				<iframe width=250 height=285 frameBorder="0" src="https://www.dwitter.net/e/1494" allowFullScreen="true"></iframe>
+				<p> Fonte: <a href='https://www.dwitter.net/' target='_BLANK'>Dwitter</a> </p>
+			</section>
+
+			<section>
+				<ul>
+					<li> Multi-paradigmas </li>
+					<li> Baseada em objetos</li>
+					<li> Interpretada</li>
+					<li> Suporte a programação Orientada a Objetos, Imperativa e Funcional</li>
+				</ul>
 			</section>
 
 			<section>
@@ -56,19 +82,28 @@
 			</section>
 
 			<section>
+				<p> Drinks </p>
+
+				<p> Fonte: <a href='https://www.youtube.com/embed/pLjEy7UjVHs' target='_BLANK'>Andre Garzia - Fazendo drinks com
+						JavaScript</a></p>
+
+			</section>
+
+			<section>
+				<p> Prototypes </p>
+				<p> Possibilidade de alterar o comportamento padrão de um objeto</p>
+			</section>
+
+
+			<section>
 				<p>V8 Google Chrome Engine</p>
+				<p> Cliente e Servidor</p>
 				<img src='./images/v8engine.jpg' />
 			</section>
 
 			<section>
 				<p> VanillaJS, JQuery, Angular, React </p>
 				<img src='./images/jqueryangularreact.jpg' />
-			</section>
-
-
-			<section>
-				<p> Dinâmico e Tipado</p>
-				<p> OO e Funcional</p>
 			</section>
 		</div>
 	</div>
